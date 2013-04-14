@@ -1,0 +1,346 @@
+EESchema Schematic File Version 2  date 4/14/2013 1:12:07 AM
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:special
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:AeroDyne
+LIBS:SiPMCosmicRay-cache
+EELAYER 25  0
+EELAYER END
+$Descr A3 16535 11700
+encoding utf-8
+Sheet 1 1
+Title "Cosmic Ray Detector"
+Date "14 apr 2013"
+Rev "1A"
+Comp "Ethan Harstad"
+Comment1 "https://github.com/ethanharstad/SiPMCosmicRay"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 6700 3500 0    60   ~ 0
+Bias Supply
+Text Notes 6700 2500 0    60   ~ 0
+Power Supply
+Wire Wire Line
+	6000 2600 5900 2600
+Wire Wire Line
+	5900 2600 5900 2500
+Wire Wire Line
+	10900 2400 8200 2400
+Wire Wire Line
+	8200 2400 8200 3400
+Wire Wire Line
+	9000 4000 7900 4000
+Wire Wire Line
+	8900 4700 8900 4550
+Wire Wire Line
+	9500 4200 9500 4300
+Wire Wire Line
+	7900 4700 7900 4550
+Connection ~ 6800 3600
+Wire Wire Line
+	6800 3600 6800 3700
+Wire Wire Line
+	7400 4100 7400 4200
+Connection ~ 7400 2600
+Wire Wire Line
+	7400 2700 7400 2600
+Wire Wire Line
+	6800 3200 6800 3100
+Wire Wire Line
+	9500 3400 9500 2600
+Connection ~ 8900 3300
+Wire Wire Line
+	9600 2800 8900 2800
+Wire Wire Line
+	7900 4000 7900 4150
+Wire Wire Line
+	10000 3800 10300 3800
+Wire Wire Line
+	10100 3300 10200 3300
+Connection ~ 10200 3800
+Wire Wire Line
+	8400 4100 8400 4000
+Connection ~ 8400 4000
+Wire Wire Line
+	9600 3300 8900 3300
+Connection ~ 8900 3600
+Wire Wire Line
+	10000 2800 10200 2800
+Wire Wire Line
+	10200 2800 10200 3800
+Connection ~ 10200 3300
+Wire Wire Line
+	7900 3600 6600 3600
+Wire Wire Line
+	6800 2600 6800 2700
+Connection ~ 6800 2600
+Wire Wire Line
+	7400 3100 7400 3200
+Wire Wire Line
+	6800 4100 6800 4200
+Wire Wire Line
+	7400 3600 7400 3700
+Connection ~ 7400 3600
+Wire Wire Line
+	8400 4600 8400 4700
+Wire Wire Line
+	8900 2800 8900 4150
+Wire Wire Line
+	8500 3600 9000 3600
+Wire Wire Line
+	9500 2600 6600 2600
+Wire Wire Line
+	10800 3800 10900 3800
+$Comp
+L +5VA #PWR?
+U 1 1 516A45B3
+P 5900 2500
+F 0 "#PWR?" H 5900 2630 20  0001 C CNN
+F 1 "+5VA" H 5900 2600 30  0000 C CNN
+	1    5900 2500
+	1    0    0    -1  
+$EndComp
+Text Notes 9000 4600 0    60   ~ 0
+Optional:\nOmit if not using fast mode
+$Comp
+L C C?
+U 1 1 516A4449
+P 9800 2800
+F 0 "C?" H 9850 2900 50  0000 L CNN
+F 1 "C" H 9850 2700 50  0000 L CNN
+F 4 "16V" H 9750 2700 60  0000 R CNN "Voltage"
+F 5 "X5R" H 9750 2900 60  0000 R CNN "Dielectric"
+	1    9800 2800
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 516A4392
+P 8900 4700
+F 0 "#PWR?" H 8900 4700 30  0001 C CNN
+F 1 "GND" H 8900 4630 30  0001 C CNN
+	1    8900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 516A4385
+P 7900 4350
+F 0 "C?" H 7950 4450 50  0000 L CNN
+F 1 "C" H 7950 4250 50  0000 L CNN
+F 4 "?V" H 7850 4250 60  0000 R CNN "Voltage"
+F 5 "X5R" H 7850 4450 60  0000 R CNN "Dielectric"
+	1    7900 4350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 516A436B
+P 8900 4350
+F 0 "C?" H 8950 4450 50  0000 L CNN
+F 1 "100pF" H 8950 4250 50  0000 L CNN
+F 4 "50V" H 8850 4250 60  0000 R CNN "Voltage"
+F 5 "X5R" H 8850 4450 60  0000 R CNN "Dielectric"
+	1    8900 4350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 516A4296
+P 7900 4700
+F 0 "#PWR?" H 7900 4700 30  0001 C CNN
+F 1 "GND" H 7900 4630 30  0001 C CNN
+	1    7900 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 516A4294
+P 8400 4700
+F 0 "#PWR?" H 8400 4700 30  0001 C CNN
+F 1 "GND" H 8400 4630 30  0001 C CNN
+	1    8400 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 516A4290
+P 9500 4300
+F 0 "#PWR?" H 9500 4300 30  0001 C CNN
+F 1 "GND" H 9500 4230 30  0001 C CNN
+	1    9500 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 516A41EE
+P 7400 4200
+F 0 "#PWR?" H 7400 4200 30  0001 C CNN
+F 1 "GND" H 7400 4130 30  0001 C CNN
+	1    7400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 516A41EA
+P 6800 4200
+F 0 "#PWR?" H 6800 4200 30  0001 C CNN
+F 1 "GND" H 6800 4130 30  0001 C CNN
+	1    6800 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 516A41D3
+P 7400 3900
+F 0 "C?" H 7450 4000 50  0000 L CNN
+F 1 "0.01uF" H 7450 3800 50  0000 L CNN
+F 4 "50V" H 7350 3800 60  0000 R CNN "Voltage"
+F 5 "X5R" H 7350 4000 60  0000 R CNN "Dielectric"
+	1    7400 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 516A41CD
+P 6800 3900
+F 0 "C?" H 6850 4000 50  0000 L CNN
+F 1 "0.1uF" H 6850 3800 50  0000 L CNN
+F 4 "50V" H 6750 3800 60  0000 R CNN "Voltage"
+F 5 "X5R" H 6750 4000 60  0000 R CNN "Dielectric"
+	1    6800 3900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 516A419D
+P 6800 3200
+F 0 "#PWR?" H 6800 3200 30  0001 C CNN
+F 1 "GND" H 6800 3130 30  0001 C CNN
+	1    6800 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 516A419A
+P 7400 3200
+F 0 "#PWR?" H 7400 3200 30  0001 C CNN
+F 1 "GND" H 7400 3130 30  0001 C CNN
+	1    7400 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 516A418F
+P 7400 2900
+F 0 "C?" H 7450 3000 50  0000 L CNN
+F 1 "0.01uF" H 7450 2800 50  0000 L CNN
+F 4 "16V" H 7350 2800 60  0000 R CNN "Voltage"
+F 5 "X5R" H 7350 3000 60  0000 R CNN "Dielectric"
+	1    7400 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 516A4151
+P 6800 2900
+F 0 "C?" H 6850 3000 50  0000 L CNN
+F 1 "0.1uF" H 6850 2800 50  0000 L CNN
+F 4 "16V" H 6750 2800 60  0000 R CNN "Voltage"
+F 5 "X5R" H 6750 3000 60  0000 R CNN "Dielectric"
+	1    6800 2900
+	-1   0    0    -1  
+$EndComp
+$Comp
+L FERRITE F?
+U 1 1 516A4134
+P 6300 2600
+F 0 "F?" H 6200 2700 60  0000 C CNN
+F 1 "FERRITE" H 6400 2500 60  0000 C CNN
+	1    6300 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L FERRITE F?
+U 1 1 516A412E
+P 6300 3600
+F 0 "F?" H 6200 3700 60  0000 C CNN
+F 1 "FERRITE" H 6400 3500 60  0000 C CNN
+	1    6300 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PHOTODIODE D?
+U 1 1 516A410B
+P 8200 3600
+F 0 "D?" H 8200 3900 60  0000 C CNN
+F 1 "uFB10035-X18" H 8200 3800 60  0000 C CNN
+	1    8200 3600
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R?
+U 1 1 516A40F0
+P 10550 3800
+F 0 "R?" V 10630 3800 50  0000 C CNN
+F 1 "R" V 10550 3800 50  0000 C CNN
+	1    10550 3800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 516A40C1
+P 9850 3300
+F 0 "R?" V 9930 3300 50  0000 C CNN
+F 1 "R" V 9850 3300 50  0000 C CNN
+	1    9850 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R?
+U 1 1 516A40B1
+P 8400 4350
+F 0 "R?" V 8480 4350 50  0000 C CNN
+F 1 "R" V 8400 4350 50  0000 C CNN
+	1    8400 4350
+	-1   0    0    -1  
+$EndComp
+$Comp
+L OPA381 U?
+U 1 1 516A409E
+P 9500 3800
+F 0 "U?" H 9800 4000 60  0000 C CNN
+F 1 "OPA380" H 9800 3600 60  0000 C CNN
+	1    9500 3800
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
