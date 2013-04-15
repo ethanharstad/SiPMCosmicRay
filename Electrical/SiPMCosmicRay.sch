@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 4/14/2013 10:33:29 PM
+EESchema Schematic File Version 2  date 4/15/2013 12:10:38 AM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -48,8 +48,8 @@ $EndDescr
 $Sheet
 S 6100 2100 1000 1000
 U 516B74CB
-F0 "Detectors" 60
-F1 "Detectors.sch" 60
+F0 "Detector1" 60
+F1 "Detector1.sch" 60
 $EndSheet
 $Sheet
 S 3900 2150 1000 1000
@@ -57,8 +57,8 @@ U 516B5437
 F0 "Cooler" 60
 F1 "PeltierCooler.sch" 60
 $EndSheet
-Text Notes 1900 1650 0    60   ~ 12
+Text Notes 9900 6400 0    60   ~ 12
 Unlabelled Components:
-Text Notes 1900 1750 0    60   ~ 0
+Text Notes 9900 6500 0    60   ~ 0
 Capacitors - 16V X5R\nResistors - 1/10W 10%
 $EndSCHEMATC
