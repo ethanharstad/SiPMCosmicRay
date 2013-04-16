@@ -1,3 +1,6 @@
 # KiCad
 *.bak
 *.000
+
+# SketchUp
+*.skb
