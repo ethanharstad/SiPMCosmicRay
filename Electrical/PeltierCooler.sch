@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 4/17/2013 7:49:12 PM
+EESchema Schematic File Version 2  date 4/18/2013 6:48:03 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 5 6
+Sheet 6 6
 Title "Cosmic Ray Detector"
-Date "17 apr 2013"
+Date "18 apr 2013"
 Rev "1A"
 Comp "Ethan Harstad"
 Comment1 "https://github.com/ethanharstad/SiPMCosmicRay"
@@ -45,10 +45,9 @@ Comment2 "CC-BY-SA 3.0 License"
 Comment3 ""
 Comment4 ""
 $EndDescr
+Connection ~ 4800 1800
 Wire Wire Line
-	1600 6400 1600 6250
-Wire Wire Line
-	1600 5600 1600 5750
+	4800 1700 4800 1800
 Wire Wire Line
 	3300 6000 3900 6000
 Wire Wire Line
@@ -69,7 +68,7 @@ Wire Wire Line
 	9000 1100 9000 1300
 Connection ~ 4800 2900
 Wire Wire Line
-	5000 2900 4600 2900
+	5000 2900 4500 2900
 Wire Wire Line
 	5100 4000 4700 4000
 Wire Wire Line
@@ -151,8 +150,6 @@ Wire Wire Line
 Wire Wire Line
 	6200 3500 6200 3400
 Wire Wire Line
-	4900 2700 5000 2700
-Wire Wire Line
 	4900 2600 5000 2600
 Wire Wire Line
 	4900 2500 5000 2500
@@ -214,7 +211,7 @@ Connection ~ 5600 900
 Wire Wire Line
 	1000 850  1000 1050
 Wire Wire Line
-	4900 1800 5000 1800
+	4700 1800 5000 1800
 Wire Wire Line
 	4900 1900 5000 1900
 Wire Wire Line
@@ -328,10 +325,10 @@ Wire Wire Line
 Wire Wire Line
 	4800 3900 5100 3900
 Wire Wire Line
-	5000 2800 4600 2800
+	5000 2800 4500 2800
 Connection ~ 4700 2800
 Wire Wire Line
-	5000 3000 4600 3000
+	5000 3000 4500 3000
 Connection ~ 4900 3000
 Wire Wire Line
 	9000 1200 10200 1200
@@ -357,36 +354,15 @@ Connection ~ 2700 6000
 Wire Wire Line
 	3500 6300 3500 5900
 Wire Wire Line
-	1900 6000 1750 6000
-$Comp
-L GND #PWR?
-U 1 1 516B8B70
-P 1600 6400
-F 0 "#PWR?" H 1600 6400 30  0001 C CNN
-F 1 "GND" H 1600 6330 30  0001 C CNN
-	1    1600 6400
-	1    0    0    -1  
-$EndComp
-Text Label 1900 6000 0    60   ~ 0
-In2P
-$Comp
-L +2.5V #PWR?
-U 1 1 516B8B53
-P 1600 5600
-F 0 "#PWR?" H 1600 5550 20  0001 C CNN
-F 1 "+2.5V" H 1600 5700 30  0000 C CNN
-	1    1600 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L POT RV?
-U 1 1 516B8B3B
-P 1600 6000
-F 0 "RV?" H 1600 5900 50  0000 C CNN
-F 1 "POT" H 1600 6000 50  0000 C CNN
-	1    1600 6000
-	0    1    1    0   
-$EndComp
+	4500 2600 4600 2600
+Wire Wire Line
+	4600 2600 4600 2700
+Wire Wire Line
+	4600 2700 5000 2700
+Text GLabel 4800 1700 1    60   Output ~ 0
+TempRef
+Text HLabel 4500 2600 0    60   Input ~ 0
+TempSet
 $Comp
 L +2.5V #PWR?
 U 1 1 516B558D
@@ -524,7 +500,7 @@ F 1 "R" V 1700 1850 50  0000 C CNN
 	1    1700 1850
 	1    0    0    -1  
 $EndComp
-Text Label 4900 1800 2    60   ~ 0
+Text Label 4700 1800 2    60   ~ 0
 Ref
 Text Label 4900 1900 2    60   ~ 0
 VLim
@@ -713,8 +689,6 @@ Text Label 4900 2500 2    60   ~ 0
 In2N
 Text Label 4900 2600 2    60   ~ 0
 Out2
-Text Label 4900 2700 2    60   ~ 0
-In2P
 $Comp
 L GND #PWR?
 U 1 1 516B54AA
@@ -1053,7 +1027,7 @@ L CONN_4 TP?
 U 1 1 516B548B
 P 5450 3950
 F 0 "TP?" V 5400 3950 50  0000 C CNN
-F 1 "TECOut" V 5500 3950 50  0000 C CNN
+F 1 "TP_TEC" V 5500 3950 50  0000 C CNN
 	1    5450 3950
 	1    0    0    -1  
 $EndComp
@@ -1066,11 +1040,11 @@ F 1 "GND" H 5000 4130 30  0001 C CNN
 	1    5000 4200
 	1    0    0    -1  
 $EndComp
-Text Label 4600 2800 2    60   ~ 0
+Text Label 4500 2800 2    60   ~ 0
 VTEC
-Text Label 4600 2900 2    60   ~ 0
+Text Label 4500 2900 2    60   ~ 0
 ITEC
-Text Label 4600 3000 2    60   ~ 0
+Text Label 4500 3000 2    60   ~ 0
 TMPGD
 Text Notes 5600 3850 0    60   ~ 0
 Temp Good\nTEC Current\nTEC Voltage\nGround

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 4/17/2013 7:49:12 PM
+EESchema Schematic File Version 2  date 4/18/2013 6:48:03 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 2 6
+Sheet 3 6
 Title "Cosmic Ray Detector"
-Date "17 apr 2013"
+Date "18 apr 2013"
 Rev "1A"
 Comp "Ethan Harstad"
 Comment1 "https://github.com/ethanharstad/SiPMCosmicRay"
@@ -45,6 +45,67 @@ Comment2 "CC-BY-SA 3.0 License"
 Comment3 ""
 Comment4 ""
 $EndDescr
+$Comp
+L LM4040 U?
+U 1 1 517085AF
+P 1900 6800
+F 0 "U?" H 1900 6950 60  0000 C CNN
+F 1 "LM4040" H 1900 6650 60  0000 C CNN
+	1    1900 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 517085AE
+P 1900 6150
+F 0 "R?" V 1980 6150 50  0000 C CNN
+F 1 "R" V 1900 6150 50  0000 C CNN
+	1    1900 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 517085AD
+P 1900 7100
+F 0 "#PWR?" H 1900 7100 30  0001 C CNN
+F 1 "GND" H 1900 7030 30  0001 C CNN
+	1    1900 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 6500 2    60   Output ~ 0
+ThrsRef
+Wire Wire Line
+	1900 7000 1900 7100
+Wire Wire Line
+	1900 6400 1900 6600
+Wire Wire Line
+	2000 6500 1900 6500
+Connection ~ 1900 6500
+Wire Wire Line
+	1900 5900 1900 5800
+$Comp
+L +5VA #PWR?
+U 1 1 517085AC
+P 1900 5800
+F 0 "#PWR?" H 1900 5930 20  0001 C CNN
+F 1 "+5VA" H 1900 5900 30  0000 C CNN
+	1    1900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VA #PWR?
+U 1 1 517085A0
+P 1100 5800
+F 0 "#PWR?" H 1100 5930 20  0001 C CNN
+F 1 "+5VA" H 1100 5900 30  0000 C CNN
+	1    1100 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1100 5900 1100 5800
+Connection ~ 1100 6500
+Wire Wire Line
+	1200 6500 1100 6500
 Wire Wire Line
 	1500 1600 1500 1700
 Connection ~ 1100 1100
@@ -97,6 +158,39 @@ Wire Wire Line
 	1100 1000 1100 1200
 Wire Wire Line
 	1100 1600 1100 1700
+Wire Wire Line
+	1100 6400 1100 6600
+Wire Wire Line
+	1100 7000 1100 7100
+Text GLabel 1200 6500 2    60   Output ~ 0
+BiasRef
+$Comp
+L GND #PWR?
+U 1 1 51708550
+P 1100 7100
+F 0 "#PWR?" H 1100 7100 30  0001 C CNN
+F 1 "GND" H 1100 7030 30  0001 C CNN
+	1    1100 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 51708537
+P 1100 6150
+F 0 "R?" V 1180 6150 50  0000 C CNN
+F 1 "R" V 1100 6150 50  0000 C CNN
+	1    1100 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM4040 U?
+U 1 1 51708532
+P 1100 6800
+F 0 "U?" H 1100 6950 60  0000 C CNN
+F 1 "LM4040" H 1100 6650 60  0000 C CNN
+	1    1100 6800
+	0    1    1    0   
+$EndComp
 $Comp
 L +BATT #PWR?
 U 1 1 516DF49D
