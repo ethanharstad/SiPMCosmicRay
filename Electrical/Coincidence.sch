@@ -35,13 +35,13 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 3 6
-Title "Cosmic Ray Detector"
-Date "17 apr 2013"
-Rev "1A"
-Comp "Ethan Harstad"
-Comment1 "https://github.com/ethanharstad/SiPMCosmicRay"
-Comment2 "CC-BY-SA 3.0 License"
+Sheet 2 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr

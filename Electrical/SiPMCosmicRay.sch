@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 4/15/2013 9:49:50 PM
+EESchema Schematic File Version 2  date 4/17/2013 7:49:12 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "Cosmic Ray Detector"
-Date "16 apr 2013"
+Date "17 apr 2013"
 Rev "1A"
 Comp "Ethan Harstad"
 Comment1 "https://github.com/ethanharstad/SiPMCosmicRay"
@@ -47,6 +47,12 @@ Comment4 ""
 $EndDescr
 $Sheet
 S 6100 3450 1000 1000
+U 516F2FCF
+F0 "Coincidence" 60
+F1 "Coincidence.sch" 60
+$EndSheet
+$Sheet
+S 7600 3450 1000 1000
 U 516B8E64
 F0 "Power" 60
 F1 "Power.sch" 60
@@ -62,6 +68,8 @@ S 3100 2700 1000 1000
 U 516B74CB
 F0 "Detector1" 60
 F1 "Detector1.sch" 60
+F2 "HS" O R 4100 2800 60 
+F3 "Det" O R 4100 2900 60 
 $EndSheet
 $Sheet
 S 4600 3450 1000 1000

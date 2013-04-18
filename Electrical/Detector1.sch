@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 4/15/2013 9:49:50 PM
+EESchema Schematic File Version 2  date 4/17/2013 7:49:12 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 4 5
+Sheet 4 6
 Title "Cosmic Ray Detector"
-Date "16 apr 2013"
+Date "17 apr 2013"
 Rev "1A"
 Comp "Ethan Harstad"
 Comment1 "https://github.com/ethanharstad/SiPMCosmicRay"
@@ -45,6 +45,10 @@ Comment2 "CC-BY-SA 3.0 License"
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text HLabel 10700 900  2    60   Output ~ 0
+HS
+Text HLabel 10700 2300 2    60   Output ~ 0
+Det
 Connection ~ 4900 3300
 Wire Wire Line
 	4900 3200 4900 3300
