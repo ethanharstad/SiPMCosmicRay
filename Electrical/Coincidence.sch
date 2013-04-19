@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 4/18/2013 6:48:03 PM
+EESchema Schematic File Version 2  date 4/18/2013 8:00:54 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 2 6
 Title ""
-Date "18 apr 2013"
+Date "19 apr 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text HLabel 1700 4300 0    60   Input ~ 0
+In2
+Text HLabel 1700 3900 0    60   Input ~ 0
+In1
 Text HLabel 1700 4100 0    60   Input ~ 0
 ThrsSet
 Wire Wire Line
