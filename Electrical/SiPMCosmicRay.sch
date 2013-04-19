@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 4/18/2013 8:00:54 PM
+EESchema Schematic File Version 2  date 4/18/2013 10:00:18 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -137,6 +137,9 @@ F1 "Coincidence.sch" 60
 F2 "ThrsSet" I L 6100 3900 60 
 F3 "In2" I L 6100 4100 60 
 F4 "In1" I L 6100 3700 60 
+F5 "Count" O R 7100 3700 60 
+F6 "Count2" O R 7100 4100 60 
+F7 "Count1" O R 7100 3900 60 
 $EndSheet
 $Sheet
 S 7600 3450 1000 1000
