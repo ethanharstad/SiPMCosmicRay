@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 4/19/2013 7:14:36 PM
+EESchema Schematic File Version 2  date 5/4/2013 6:32:29 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 2 6
+Sheet 5 7
 Title ""
-Date "20 apr 2013"
+Date "4 may 2013"
 Rev ""
 Comp ""
 Comment1 ""
@@ -45,6 +45,28 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
+Text HLabel 5500 1300 0    60   Input ~ 0
+HS2
+Text HLabel 5500 1200 0    60   Input ~ 0
+HS1
+$Comp
+L CK_MAX32 J?
+U 3 1 51858A0A
+P 7300 2700
+F 0 "J?" H 7300 2800 60  0000 C CNN
+F 1 "CK_MAX32" V 7150 2450 60  0000 C CNN
+	3    7300 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L CK_MAX32 J?
+U 2 1 518589FE
+P 7300 1700
+F 0 "J?" H 7300 1800 60  0000 C CNN
+F 1 "CK_MAX32" V 7150 1450 60  0000 C CNN
+	2    7300 1700
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	5500 4000 5400 4000
 Connection ~ 4200 3000

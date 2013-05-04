@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 4/19/2013 7:14:36 PM
+EESchema Schematic File Version 2  date 5/4/2013 6:32:29 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 6 6
+Sheet 6 7
 Title "Cosmic Ray Detector"
-Date "20 apr 2013"
+Date "4 may 2013"
 Rev "1A"
 Comp "Ethan Harstad"
 Comment1 "https://github.com/ethanharstad/SiPMCosmicRay"
@@ -178,17 +178,17 @@ Wire Wire Line
 	2400 5900 2400 6100
 Wire Wire Line
 	2400 5300 2400 5400
-Connection ~ 1700 6750
+Connection ~ 1700 6700
 Wire Wire Line
-	1800 6750 1700 6750
+	1800 6700 1700 6700
 Wire Wire Line
-	1700 6150 1700 5950
+	1700 6100 1700 5900
 Wire Wire Line
-	1700 7450 1700 7350
+	1700 7400 1700 7300
 Wire Wire Line
-	1000 6750 1000 6650
+	1000 6700 1000 6600
 Wire Wire Line
-	1000 5350 1000 5450
+	1000 5300 1000 5400
 Wire Wire Line
 	4800 3000 4900 3000
 Wire Wire Line
@@ -219,17 +219,17 @@ Wire Wire Line
 	8400 1600 8400 1500
 Connection ~ 8400 1000
 Wire Wire Line
-	1000 5950 1000 6150
+	1000 5900 1000 6100
 Wire Wire Line
-	1100 6050 1000 6050
-Connection ~ 1000 6050
+	1100 6000 1000 6000
+Connection ~ 1000 6000
 Wire Wire Line
-	1700 6650 1700 6850
+	1700 6600 1700 6800
 Wire Wire Line
-	1700 5350 1700 5450
+	1700 5300 1700 5400
 Wire Wire Line
-	1800 6050 1700 6050
-Connection ~ 1700 6050
+	1800 6000 1700 6000
+Connection ~ 1700 6000
 Wire Wire Line
 	2400 6700 2400 6600
 Wire Wire Line
@@ -371,13 +371,13 @@ F 1 "+2.5V" H 1300 3500 30  0000 C CNN
 $EndComp
 Text Notes 1400 3200 0    60   ~ 12
 Oscillator Compensation
-Text Notes 3550 4650 1    60   ~ 12
+Text Notes 3600 4100 3    60   ~ 12
 Freq Set - ?kHz
-Text Notes 2300 6350 1    60   ~ 12
-Thermistor Bias
-Text Notes 1600 6850 1    60   ~ 12
+Text Notes 2300 5400 3    60   ~ 12
+Thermistor Reference
+Text Notes 1600 5400 3    60   ~ 12
 Current Limit - ?A
-Text Notes 900  6500 1    60   ~ 12
+Text Notes 900  5400 3    60   ~ 12
 Voltage Limit - ?V
 $Comp
 L R R?
@@ -399,7 +399,7 @@ F 4 "1%" V 3000 6350 60  0000 C CNN "Tolerance"
 	1    3100 6350
 	1    0    0    -1  
 $EndComp
-Text Notes 2900 6700 1    60   ~ 12
+Text Notes 2900 5400 3    60   ~ 12
 Thermistor Excitation
 Text Notes 4800 6700 0    60   ~ 12
 PID Compensation Network
@@ -432,19 +432,19 @@ $EndComp
 $Comp
 L +2.5V #PWR?
 U 1 1 516B5589
-P 1700 5350
-F 0 "#PWR?" H 1700 5300 20  0001 C CNN
-F 1 "+2.5V" H 1700 5450 30  0000 C CNN
-	1    1700 5350
+P 1700 5300
+F 0 "#PWR?" H 1700 5250 20  0001 C CNN
+F 1 "+2.5V" H 1700 5400 30  0000 C CNN
+	1    1700 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L +2.5V #PWR?
 U 1 1 516B5586
-P 1000 5350
-F 0 "#PWR?" H 1000 5300 20  0001 C CNN
-F 1 "+2.5V" H 1000 5450 30  0000 C CNN
-	1    1000 5350
+P 1000 5300
+F 0 "#PWR?" H 1000 5250 20  0001 C CNN
+F 1 "+2.5V" H 1000 5400 30  0000 C CNN
+	1    1000 5300
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -533,19 +533,19 @@ $EndComp
 $Comp
 L R R?
 U 1 1 516B54BD
-P 1000 5700
-F 0 "R?" V 1080 5700 50  0000 C CNN
-F 1 "R" V 1000 5700 50  0000 C CNN
-	1    1000 5700
+P 1000 5650
+F 0 "R?" V 1080 5650 50  0000 C CNN
+F 1 "R" V 1000 5650 50  0000 C CNN
+	1    1000 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 516B54BC
-P 1000 6400
-F 0 "R?" V 1080 6400 50  0000 C CNN
-F 1 "R" V 1000 6400 50  0000 C CNN
-	1    1000 6400
+P 1000 6350
+F 0 "R?" V 1080 6350 50  0000 C CNN
+F 1 "R" V 1000 6350 50  0000 C CNN
+	1    1000 6350
 	1    0    0    -1  
 $EndComp
 Text Label 4600 2700 2    60   ~ 0
@@ -561,53 +561,53 @@ Ref
 $Comp
 L GND #PWR?
 U 1 1 516B54BB
-P 1000 6750
-F 0 "#PWR?" H 1000 6750 30  0001 C CNN
-F 1 "GND" H 1000 6680 30  0001 C CNN
-	1    1000 6750
+P 1000 6700
+F 0 "#PWR?" H 1000 6700 30  0001 C CNN
+F 1 "GND" H 1000 6630 30  0001 C CNN
+	1    1000 6700
 	1    0    0    -1  
 $EndComp
-Text Label 1100 6050 0    60   ~ 0
+Text Label 1100 6000 0    60   ~ 0
 VLim
 $Comp
 L R R?
 U 1 1 516B54BA
-P 1700 5700
-F 0 "R?" V 1780 5700 50  0000 C CNN
-F 1 "R" V 1700 5700 50  0000 C CNN
-	1    1700 5700
+P 1700 5650
+F 0 "R?" V 1780 5650 50  0000 C CNN
+F 1 "R" V 1700 5650 50  0000 C CNN
+	1    1700 5650
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 516B54B9
-P 1700 6400
-F 0 "R?" V 1780 6400 50  0000 C CNN
-F 1 "R" V 1700 6400 50  0000 C CNN
-	1    1700 6400
+P 1700 6350
+F 0 "R?" V 1780 6350 50  0000 C CNN
+F 1 "R" V 1700 6350 50  0000 C CNN
+	1    1700 6350
 	1    0    0    -1  
 $EndComp
 $Comp
 L R R?
 U 1 1 516B54B8
-P 1700 7100
-F 0 "R?" V 1780 7100 50  0000 C CNN
-F 1 "R" V 1700 7100 50  0000 C CNN
-	1    1700 7100
+P 1700 7050
+F 0 "R?" V 1780 7050 50  0000 C CNN
+F 1 "R" V 1700 7050 50  0000 C CNN
+	1    1700 7050
 	1    0    0    -1  
 $EndComp
 $Comp
 L GND #PWR?
 U 1 1 516B54B7
-P 1700 7450
-F 0 "#PWR?" H 1700 7450 30  0001 C CNN
-F 1 "GND" H 1700 7380 30  0001 C CNN
-	1    1700 7450
+P 1700 7400
+F 0 "#PWR?" H 1700 7400 30  0001 C CNN
+F 1 "GND" H 1700 7330 30  0001 C CNN
+	1    1700 7400
 	1    0    0    -1  
 $EndComp
-Text Label 1800 6050 0    60   ~ 0
+Text Label 1800 6000 0    60   ~ 0
 ILimC
-Text Label 1800 6750 0    60   ~ 0
+Text Label 1800 6700 0    60   ~ 0
 ILimH
 $Comp
 L R R?

@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 4/19/2013 7:14:36 PM
+EESchema Schematic File Version 2  date 5/4/2013 6:32:29 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -35,9 +35,9 @@ EELAYER 25  0
 EELAYER END
 $Descr A4 11700 8267
 encoding utf-8
-Sheet 3 6
+Sheet 3 7
 Title "Cosmic Ray Detector"
-Date "20 apr 2013"
+Date "4 may 2013"
 Rev "1A"
 Comp "Ethan Harstad"
 Comment1 "https://github.com/ethanharstad/SiPMCosmicRay"
@@ -45,35 +45,16 @@ Comment2 "CC-BY-SA 3.0 License"
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L LM4040 U?
-U 1 1 517085AF
-P 1900 6800
-F 0 "U?" H 1900 6950 60  0000 C CNN
-F 1 "LM4040" H 1900 6650 60  0000 C CNN
-	1    1900 6800
-	0    1    1    0   
-$EndComp
-$Comp
-L R R?
-U 1 1 517085AE
-P 1900 6150
-F 0 "R?" V 1980 6150 50  0000 C CNN
-F 1 "R" V 1900 6150 50  0000 C CNN
-	1    1900 6150
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR?
-U 1 1 517085AD
-P 1900 7100
-F 0 "#PWR?" H 1900 7100 30  0001 C CNN
-F 1 "GND" H 1900 7030 30  0001 C CNN
-	1    1900 7100
-	1    0    0    -1  
-$EndComp
-Text GLabel 2000 6500 2    60   Output ~ 0
-ThrsRef
+NoConn ~ 3800 1300
+Connection ~ 4000 1500
+Wire Wire Line
+	4000 1700 4000 1400
+Wire Wire Line
+	4000 1400 3800 1400
+Wire Wire Line
+	3800 1200 4100 1200
+Wire Wire Line
+	4100 1200 4100 1000
 Wire Wire Line
 	1900 7000 1900 7100
 Wire Wire Line
@@ -83,24 +64,6 @@ Wire Wire Line
 Connection ~ 1900 6500
 Wire Wire Line
 	1900 5900 1900 5800
-$Comp
-L +5VA #PWR?
-U 1 1 517085AC
-P 1900 5800
-F 0 "#PWR?" H 1900 5930 20  0001 C CNN
-F 1 "+5VA" H 1900 5900 30  0000 C CNN
-	1    1900 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5VA #PWR?
-U 1 1 517085A0
-P 1100 5800
-F 0 "#PWR?" H 1100 5930 20  0001 C CNN
-F 1 "+5VA" H 1100 5900 30  0000 C CNN
-	1    1100 5800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1100 5900 1100 5800
 Connection ~ 1100 6500
@@ -162,6 +125,114 @@ Wire Wire Line
 	1100 6400 1100 6600
 Wire Wire Line
 	1100 7000 1100 7100
+Wire Wire Line
+	3900 1000 3900 1600
+Wire Wire Line
+	3900 1600 3800 1600
+Wire Wire Line
+	4000 1500 3800 1500
+$Comp
+L GND #PWR?
+U 1 1 51858C8B
+P 4000 1700
+F 0 "#PWR?" H 4000 1700 30  0001 C CNN
+F 1 "GND" H 4000 1630 30  0001 C CNN
+	1    4000 1700
+	1    0    0    -1  
+$EndComp
+NoConn ~ 3800 1100
+$Comp
+L +3.3V #PWR?
+U 1 1 51858C75
+P 4100 1000
+F 0 "#PWR?" H 4100 960 30  0001 C CNN
+F 1 "+3.3V" H 4100 1110 30  0000 C CNN
+	1    4100 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L +BATT #PWR?
+U 1 1 51858C69
+P 3900 1000
+F 0 "#PWR?" H 3900 950 20  0001 C CNN
+F 1 "+BATT" H 3900 1100 30  0000 C CNN
+	1    3900 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L CK_MAX32 J?
+U 7 1 51858A2F
+P 3500 2600
+F 0 "J?" H 3500 2700 60  0000 C CNN
+F 1 "CK_MAX32" V 3350 2350 60  0000 C CNN
+	7    3500 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CK_MAX32 J?
+U 4 1 51858A27
+P 3500 1900
+F 0 "J?" H 3500 2000 60  0000 C CNN
+F 1 "CK_MAX32" V 3350 1650 60  0000 C CNN
+	4    3500 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CK_MAX32 J1
+U 1 1 518589A7
+P 3500 1100
+F 0 "J1" H 3500 1200 60  0000 C CNN
+F 1 "CK_MAX32" V 3350 850 60  0000 C CNN
+	1    3500 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L LM4040 U?
+U 1 1 517085AF
+P 1900 6800
+F 0 "U?" H 1900 6950 60  0000 C CNN
+F 1 "LM4040" H 1900 6650 60  0000 C CNN
+	1    1900 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L R R?
+U 1 1 517085AE
+P 1900 6150
+F 0 "R?" V 1980 6150 50  0000 C CNN
+F 1 "R" V 1900 6150 50  0000 C CNN
+	1    1900 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 517085AD
+P 1900 7100
+F 0 "#PWR?" H 1900 7100 30  0001 C CNN
+F 1 "GND" H 1900 7030 30  0001 C CNN
+	1    1900 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 6500 2    60   Output ~ 0
+ThrsRef
+$Comp
+L +5VA #PWR?
+U 1 1 517085AC
+P 1900 5800
+F 0 "#PWR?" H 1900 5930 20  0001 C CNN
+F 1 "+5VA" H 1900 5900 30  0000 C CNN
+	1    1900 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5VA #PWR?
+U 1 1 517085A0
+P 1100 5800
+F 0 "#PWR?" H 1100 5930 20  0001 C CNN
+F 1 "+5VA" H 1100 5900 30  0000 C CNN
+	1    1100 5800
+	1    0    0    -1  
+$EndComp
 Text GLabel 1200 6500 2    60   Output ~ 0
 BiasRef
 $Comp
