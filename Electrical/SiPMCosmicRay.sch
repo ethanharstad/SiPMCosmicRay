@@ -1,4 +1,4 @@
-EESchema Schematic File Version 2  date 5/4/2013 6:32:29 PM
+EESchema Schematic File Version 2  date 5/5/2013 3:54:39 PM
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -37,7 +37,7 @@ $Descr A4 11700 8267
 encoding utf-8
 Sheet 1 7
 Title "Cosmic Ray Detector"
-Date "4 may 2013"
+Date "5 may 2013"
 Rev "1A"
 Comp "Ethan Harstad"
 Comment1 "https://github.com/ethanharstad/SiPMCosmicRay"
@@ -149,10 +149,10 @@ Wire Wire Line
 Wire Wire Line
 	1400 3100 1600 3100
 $Comp
-L GND #PWR?
+L GND #PWR4
 U 1 1 518591FF
 P 1500 3200
-F 0 "#PWR?" H 1500 3200 30  0001 C CNN
+F 0 "#PWR4" H 1500 3200 30  0001 C CNN
 F 1 "GND" H 1500 3130 30  0001 C CNN
 	1    1500 3200
 	1    0    0    -1  
@@ -170,28 +170,28 @@ Count2
 Text Label 7400 3750 0    60   ~ 0
 Count1
 $Comp
-L CONN_4 P?
+L CONN_4 P3
 U 1 1 51859177
 P 1050 2950
-F 0 "P?" V 1000 2950 50  0000 C CNN
+F 0 "P3" V 1000 2950 50  0000 C CNN
 F 1 "CONN_4" V 1100 2950 50  0000 C CNN
 	1    1050 2950
 	-1   0    0    -1  
 $EndComp
 $Comp
-L CONN_5 P?
+L CONN_5 P1
 U 1 1 518590D3
 P 1000 2100
-F 0 "P?" V 950 2100 50  0000 C CNN
+F 0 "P1" V 950 2100 50  0000 C CNN
 F 1 "CONN_5" V 1050 2100 50  0000 C CNN
 	1    1000 2100
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR3
 U 1 1 5185902C
 P 1500 2400
-F 0 "#PWR?" H 1500 2400 30  0001 C CNN
+F 0 "#PWR3" H 1500 2400 30  0001 C CNN
 F 1 "GND" H 1500 2330 30  0001 C CNN
 	1    1500 2400
 	1    0    0    -1  
@@ -213,28 +213,28 @@ Det1
 Text Label 6300 2800 0    60   ~ 0
 HS1
 $Comp
-L GND #PWR?
+L GND #PWR2
 U 1 1 51858EC7
 P 1500 1400
-F 0 "#PWR?" H 1500 1400 30  0001 C CNN
+F 0 "#PWR2" H 1500 1400 30  0001 C CNN
 F 1 "GND" H 1500 1330 30  0001 C CNN
 	1    1500 1400
 	1    0    0    -1  
 $EndComp
 $Comp
-L +BATT #PWR?
+L +BATT #PWR1
 U 1 1 51858EC2
 P 1500 1000
-F 0 "#PWR?" H 1500 950 20  0001 C CNN
+F 0 "#PWR1" H 1500 950 20  0001 C CNN
 F 1 "+BATT" H 1500 1100 30  0000 C CNN
 	1    1500 1000
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_2 P?
+L CONN_2 P2
 U 1 1 51858EB7
 P 1050 1200
-F 0 "P?" V 1000 1200 40  0000 C CNN
+F 0 "P2" V 1000 1200 40  0000 C CNN
 F 1 "CONN_2" V 1100 1200 40  0000 C CNN
 	1    1050 1200
 	-1   0    0    -1  
@@ -275,19 +275,19 @@ ThrsRef
 Text GLabel 4700 6000 1    60   Input ~ 0
 BiasRef
 $Comp
-L GND #PWR?
+L GND #PWR6
 U 1 1 51707B27
 P 4700 6800
-F 0 "#PWR?" H 4700 6800 30  0001 C CNN
+F 0 "#PWR6" H 4700 6800 30  0001 C CNN
 F 1 "GND" H 4700 6730 30  0001 C CNN
 	1    4700 6800
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR?
+L GND #PWR7
 U 1 1 51707B22
 P 5600 6800
-F 0 "#PWR?" H 5600 6800 30  0001 C CNN
+F 0 "#PWR7" H 5600 6800 30  0001 C CNN
 F 1 "GND" H 5600 6730 30  0001 C CNN
 	1    5600 6800
 	1    0    0    -1  
@@ -295,10 +295,10 @@ $EndComp
 Text Label 5900 6400 0    60   ~ 0
 ThrsSet
 $Comp
-L POT RV?
+L POT RV3
 U 1 1 51707B04
 P 5600 6400
-F 0 "RV?" H 5600 6300 50  0000 C CNN
+F 0 "RV3" H 5600 6300 50  0000 C CNN
 F 1 "POT" H 5600 6400 50  0000 C CNN
 	1    5600 6400
 	0    1    1    0   
@@ -306,10 +306,10 @@ $EndComp
 Text Label 5000 6400 0    60   ~ 0
 BiasSet
 $Comp
-L POT RV?
+L POT RV2
 U 1 1 51707AEB
 P 4700 6400
-F 0 "RV?" H 4700 6300 50  0000 C CNN
+F 0 "RV2" H 4700 6300 50  0000 C CNN
 F 1 "POT" H 4700 6400 50  0000 C CNN
 	1    4700 6400
 	0    1    1    0   
@@ -317,19 +317,19 @@ $EndComp
 Text Label 4000 6400 0    60   ~ 0
 TempSet
 $Comp
-L GND #PWR?
+L GND #PWR5
 U 1 1 51707A98
 P 3700 6800
-F 0 "#PWR?" H 3700 6800 30  0001 C CNN
+F 0 "#PWR5" H 3700 6800 30  0001 C CNN
 F 1 "GND" H 3700 6730 30  0001 C CNN
 	1    3700 6800
 	1    0    0    -1  
 $EndComp
 $Comp
-L POT RV?
+L POT RV1
 U 1 1 51707A88
 P 3700 6400
-F 0 "RV?" H 3700 6300 50  0000 C CNN
+F 0 "RV1" H 3700 6300 50  0000 C CNN
 F 1 "POT" H 3700 6400 50  0000 C CNN
 	1    3700 6400
 	0    1    1    0   
